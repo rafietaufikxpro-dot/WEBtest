@@ -1,5 +1,5 @@
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: poppins;
     background-image: url("2269124.jpg");
 }
  * {
@@ -22,12 +22,94 @@ h3,h2{
     text-align: center;
 }
 input[type="text"]{
-    width: 80%;
+    width: 70%;
     padding: 12px;
     border: 1px solid #ccc;
-    border-radius: 6px;
+    border-radius:  20px;
     box-sizing: border-box;
     margin-top: 6px;
     margin-bottom: 16px;
-    margin-left: 60px;
+    margin-left: 100px;
+   padding: 20px;
 }
+input[type="password"]{
+    /* width: 200%; */
+    border: 1px solid #ccc;
+    border-radius:  20px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    margin-left: 100px;
+   padding: 20px;
+}
+
+.password_container {
+    position: relative;
+    width: 300px; /* Adjust as needed */
+    /* padding: 20px; */
+    /* border: 1px solid #ccc; */
+    /* background-color: antiquewhite; */
+}
+  
+  
+  #password {
+    width: 169%;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 55px;
+  }
+  
+  #togglePassword {
+    position: absolute;
+    right: -290px;
+    top: 48%;
+    /* left: 10px; */
+    transform: translateY(-10%);
+    cursor: pointer;
+    color: gray;
+  }
+  .abis_password{
+   display: flex;
+  }
+  .abis_password h4{
+    margin: 0px 0px 0px 28%;
+    font-size: medium;
+    color: blue;
+  }
+  input[type="checkbox"]{
+    margin: 0px 0px 0px 110px;
+    width: 20px ;
+  }
+  label[for="Remember_me"]{
+    margin-left: 05px;
+  }
+  .tombol_login{
+    margin-top: 50px;
+  }
+  .sign{
+    background-color: #6375F1;
+     width: 70%;
+     margin: 0px 0px 0px 103px;
+     color:white;
+     border-radius: 20px;
+     padding: 20px;
+     
+  
+  }
+  .tombol_login h3{
+    width: 70%;
+    margin: 20px 0px 0px 103px;
+    border-radius: 20px;
+     padding: 15px;
+     border: 1px solid black;
+     font-size: medium;
+     /* color: gray; */
+  }
+  h4{
+    text-align: center;
+    color: gray;
+    margin-top: 30px;
+  }
+  h4 span{
+    color: #6375F1;
+  }

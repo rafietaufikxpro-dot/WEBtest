@@ -1,19 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>form</title>
-    <link rel="stylesheet" href="form_latihan.css">
-</head>
-<body>
+    <link rel="stylesheet" href="form_latihan.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/ef1f748698.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <div class="container">
-        <h3>welcome back!</h3>
-        <h2>good morning</h2>
-        <form action="">
-            <label for="email">email</label><br>
-            <input type="text" id="email" name="email" placeholder="enter your email">
-        </form>
+      <h3>welcome back!</h3>
+      <h2>good morning</h2>
+      <form action="">
+        <div class="email_container">
+          <label for="email" style="margin: 0px 0px 0px 120px">email</label
+          ><br />
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="enter your email"
+          />
+        </div>
+        <div class="password_container">
+          <label for="password" style="margin: 0px 0px 0px 120px"
+            >password</label
+          ><br />
+          <input
+            type="password"
+            id="password"
+            placeholder="Enter your password"
+          />
+          <i class="far fa-eye" id="togglePassword"></i>
+        </div>
+        <div class="abis_password">
+          <input type="checkbox" name="Remember me" value="Remember me" />
+          <label for="Remember_me">Remember me</label>
+          <h4>forgot password?</h4>
+        </div>
+        <div class="tombol_login">
+          <h3 class="sign">sign in</h3>
+          <h3><i class="fa-brands fa-google"></i>&nbsp;sign in with google</h3>
+        </div>
+        <div class="bawah">
+          <h4>don't have account?<span>sign up</span></h4>
+        </div>
+      </form>
     </div>
-</body>
+    <script src="form.js"></script>
+  </body>
 </html>
