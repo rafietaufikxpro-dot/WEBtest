@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slider</title>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+/>
+</head>
+<body>
+    <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: white;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+       
+    }
+    .swiper {
+      width: 50%;
+      height: 50%;
+      margin-top: 10%;
+      
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #444;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
+      overflow: hidden;
+     
+    }
+   .teks{
+    position: absolute;
+  bottom: 8px;
+  left: 16px;
+   }
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      /* border-radius: 10%; */
+      filter: brightness(70%);
+      transition: 0.3s;
+    }
+    .swiper-slide img:hover{
+     scale: 1.06;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="fabrice-villard-5WuO0I4ryaI-unsplash.jpg" alt="">
+      <div class="teks">hutan</div>
+    </div>
+      <div class="swiper-slide"><img src="steve-busch-PkvnkMrnLFo-unsplash.jpg" alt="">
+        <div class="teks">angkasa</div>  
+    </div>
+      <div class="swiper-slide"><img src="steve-busch-PkvnkMrnLFo-unsplash.jpg" alt="">
+        <div class="teks">angkasa</div>
+    </div>
+      <div class="swiper-slide"><img src="kevin-schmid-3ByQ0lcCGA8-unsplash.jpg" alt="">
+        <div class="teks">hutan</div>
+    </div>
+      <div class="swiper-slide"><img src="jonny-gios-IHfbPJYsnsI-unsplash.jpg" alt="">
+        <div class="teks">tiriz</div>
+    </div>
+      <div class="swiper-slide"><img src="jonny-gios-IHfbPJYsnsI-unsplash.jpg" alt="">
+        <div class="teks">tiriz</div>
+    </div>
+      <!-- <div class="swiper-slide"><img src="" alt=""></div>
+      <div class="swiper-slide"><img src="" alt=""></div>
+      <div class="swiper-slide"><img src="" alt=""></div> -->
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+</html>

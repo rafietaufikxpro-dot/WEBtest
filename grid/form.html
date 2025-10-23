@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form training</title>
+    <link rel="stylesheet" href="style_form.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h3>contact form</h3>
+      <form action="">
+        <label for="nama lengkap">nama lengkap</label>
+        <input
+          type="text"
+          id="nama lengkap"
+          name="namalengkap"
+          placeholder="isikan nama lengkap anda... "
+        />
+        <label for="negara">negara</label>
+        <select name="negara" id="negara">
+          <option value="pilihnegara">--pilih negara--</option>
+          <option value="ausralia">ausralia</option>
+          <option value="canada">canada</option>
+          <option value="usa">usa</option>
+        </select>
+        <input type="radio" id="bogor" name="kota" value="bogor"/>
+        <label for="bogor">bogor</label><br>
+        <input type="radio" id="jakarta" name="kota" value="jakarta"/>
+        <label for="jakarta">jakarta</label><br>
+        <input type="checkbox" name="smp" value="smp">
+        <label for="smp">smp</label><br><br>
+
+        <label for="subject">subject</label>
+        <textarea name="subject" id="subject"placeholder="write someting"style=height:200px> </textarea>
+        <input type="submit" value="kirim" name="kirim" placeholder="kirim">
+      </form>
+    </div>
+  </body>
+</html>
