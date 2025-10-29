@@ -1,0 +1,30 @@
+.container {
+  margin: auto;
+}
+.jurusan {
+  display: flex;
+  padding: 20px;
+}
+h1 {
+  text-align: center;
+}
+.jurusan .rpl,
+.tkj,
+.dkv {
+  background-color: blue;
+  margin: 20px;
+}
+h2 {
+  text-align: center;
+}
+@media screen and (max-width: 430px) {
+  .jurusan {
+    flex-direction: column;
+  }
+  .jurusan .rpl,
+  .tkj,
+  .dkv {
+    background-color: burlywood;
+    font-size: 5;
+  }
+}

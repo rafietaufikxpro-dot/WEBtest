@@ -1,0 +1,22 @@
+.hero {
+  display: flex;
+}
+.container {
+  margin: auto;
+}
+.box {
+  background-color: blue;
+}
+.box1 {
+  background-color: blueviolet;
+}
+@media screen and (max-width: 430px) {
+  .box {
+    background-color: brown;
+    padding: 20px;
+  }
+  .box1 {
+    background-color: aqua;
+    padding: 20px;
+  }
+}
